@@ -57,6 +57,8 @@ vx is collection of reusable low-level visualization components. vx combines the
 
 ## Usage
 
+[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/kind-modem)
+
 Let's make a simple bar graph.
 
 First we'll install the relevant packages: 
@@ -161,6 +163,7 @@ Lots coming soon, check out the [roadmap](./ROADMAP.md).
 ## In the wild
 
 - [williaster/data-ui](https://github.com/williaster/data-ui) ([Demo](https://williaster.github.io/data-ui/))
+- [Flaque/data-structures](https://github.com/Flaque/data-structures) ([Interactive explanation of the trie data structure](https://trie.now.sh/))
 - Have a project that's using vx? Open a pull request and we'll add it to the list. 
 
 ## FAQ
