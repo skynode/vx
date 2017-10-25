@@ -1,5 +1,22 @@
 import React from 'react';
-import { Arc } from '@vx/shape';
+import Show from '../components/show';
+import Pie from '../components/tiles/pie';
+
+export default () => {
+  return (
+    <Show
+      events
+      margin={{
+        top: 10,
+        left: 40,
+        right: 30,
+        bottom: 80,
+      }}
+      component={Pie}
+      title="Pies"
+    >
+      {`import React from 'react';
+import { Pie } from '@vx/shape';
 import { Group } from '@vx/group';
 import { GradientPinkBlue } from '@vx/gradient';
 import { letterFrequency, browserUsage } from '@vx/mock-data';
@@ -49,7 +66,7 @@ export default ({
         fill="url('#gradients')"
       />
       <Group top={height / 2 - margin.top} left={width / 2}>
-        <Arc
+        <Pie
           data={browsers}
           pieValue={d => d.usage}
           outerRadius={radius - 80}
@@ -65,7 +82,7 @@ export default ({
             return <Label x={x} y={y}>{arc.data.label}</Label>;
           }}
         />
-        <Arc
+        <Pie
           data={letters}
           pieValue={d => d.frequency}
           outerRadius={radius - 135}
@@ -79,4 +96,7 @@ export default ({
       </Group>
     </svg>
   );
-}
+}`}
+    </Show>
+  );
+};

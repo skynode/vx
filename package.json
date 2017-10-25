@@ -1,20 +1,10 @@
 {
-  "devDependencies": {
-    "babel-jest": "^20.0.3",
-    "coveralls": "^2.13.1",
-    "jest": "^20.0.3",
-    "lerna": "2.0.0-beta.38",
-    "react": "^15.5.4",
-    "react-addons-test-utils": "^15.5.1",
-    "react-dom": "^15.5.4",
-    "regenerator-runtime": "^0.10.5"
-  },
-  "name": "@vx/vx",
+  "name": "@vx/dev",
   "version": "0.0.1",
   "description": "Low-level visualization components",
   "main": "index.js",
   "scripts": {
-    "test": "lerna exec npm install && jest",
+    "test": "lerna clean --yes && lerna bootstrap && lerna exec npm run test",
     "docs": "node ./scripts/docs/index.js",
     "prepare-release": "git checkout master && git pull --rebase origin master && npm run docs && lerna updated",
     "release": "npm run prepare-release && lerna publish --exact"
@@ -41,5 +31,14 @@
     "charts"
   ],
   "author": "@hshoff",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-jest": "^20.0.3",
+    "coveralls": "^2.13.1",
+    "jest": "^20.0.3",
+    "lerna": "2.1.2",
+    "react": "^15.0.0-0 || ^16.0.0-0",
+    "react-dom": "^15.0.0-0 || ^16.0.0-0",
+    "regenerator-runtime": "^0.10.5"
+  }
 }

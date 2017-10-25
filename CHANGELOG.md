@@ -1,5 +1,22 @@
 # Changelog
 
+- [v0.0.144](#v00144)
+- [v0.0.143](#v00143)
+- [v0.0.142](#v00142)
+- [v0.0.141](#v00141)
+- [v0.0.140](#v00140)
+- [v0.0.139](#v00139)
+- [v0.0.138](#v00138)
+- [v0.0.137](#v00137)
+- [v0.0.136](#v00136)
+- [v0.0.135](#v00135)
+- [v0.0.134](#v00134)
+- [v0.0.133](#v00133)
+- [v0.0.132](#v00132)
+- [v0.0.131](#v00131)
+- [v0.0.130](#v00130)
+- [v0.0.129](#v00129)
+- [v0.0.128](#v00128)
 - [v0.0.127](#v00127)
 - [v0.0.126](#v00126)
 - [v0.0.125](#v00125)
@@ -13,6 +30,382 @@
 - [v0.0.112](#v00112)
 
 ------
+
+# v0.0.144
+
+#### 💥 Breaking Changes
+
+- [shape] `<Arc />` renamed `<Pie />`, new `<Arc />` not dependent on d3-shape pie generator. [#179](https://github.com/hshoff/vx/pull/179)
+
+#### 🚀 Enhancements
+
+- [demo] add `<Pack />` and `<Treemap />` demo tiles + pages. [#179](https://github.com/hshoff/vx/pull/179)
+- [mock] add exoplanets, planets, and shakespeare mocks. [#179](https://github.com/hshoff/vx/pull/179)
+
+#### 🐛 Bug Fix
+
+- [hierarchy] rename `<Partition />` classnames from `vx-pack` => `vx-partition`. [#179](https://github.com/hshoff/vx/pull/179)
+- [hierarchy] export partition, treemap, and pack from index. [#179](https://github.com/hshoff/vx/pull/179)
+
+```bash
+Changes:
+ - @vx/annotation: 0.0.143 => 0.0.144
+ - @vx/axis: 0.0.143 => 0.0.144
+ - @vx/demo: 0.0.143 => 0.0.144
+ - @vx/grid: 0.0.143 => 0.0.144
+ - @vx/hierarchy: 0.0.143 => 0.0.144
+ - @vx/marker: 0.0.143 => 0.0.144
+ - @vx/mock-data: 0.0.143 => 0.0.144
+ - @vx/shape: 0.0.143 => 0.0.144
+ - @vx/vx: 0.0.143 => 0.0.144
+```
+
+# v0.0.143
+
+#### :boom: Breaking Changes
+
+- [hierarchy] `<Tree />` & `<Cluster />` now only pass `data` as an argument to the child render function [#173](https://github.com/hshoff/vx/pull/173)
+
+#### :rocket: Enhancement
+
+- [hierarchy] add `<Pack />`, `<Partition />`, & `<Treemap />` [#173](https://github.com/hshoff/vx/pull/173)
+
+#### :house: Internal
+
+- [deps][tests] use react 16 dev dep, enzyme 3, jest 21. fix tests. [#178](https://github.com/hshoff/vx/pull/178)
+
+```bash
+Changes:
+ - @vx/annotation: 0.0.142 => 0.0.143
+ - @vx/axis: 0.0.142 => 0.0.143
+ - @vx/bounds: 0.0.141 => 0.0.143
+ - @vx/boxplot: 0.0.140 => 0.0.143
+ - @vx/brush: 0.0.140 => 0.0.143
+ - @vx/clip-path: 0.0.140 => 0.0.143
+ - @vx/curve: 0.0.140 => 0.0.143
+ - @vx/demo: 0.0.142 => 0.0.143
+ - @vx/drag: 0.0.140 => 0.0.143
+ - @vx/event: 0.0.141 => 0.0.143
+ - @vx/geo: 0.0.140 => 0.0.143
+ - @vx/glyph: 0.0.140 => 0.0.143
+ - @vx/gradient: 0.0.140 => 0.0.143
+ - @vx/grid: 0.0.142 => 0.0.143
+ - @vx/group: 0.0.140 => 0.0.143
+ - @vx/heatmap: 0.0.140 => 0.0.143
+ - @vx/hierarchy: 0.0.141 => 0.0.143
+ - @vx/legend: 0.0.141 => 0.0.143
+ - @vx/marker: 0.0.142 => 0.0.143
+ - @vx/mock-data: 0.0.136 => 0.0.143
+ - @vx/network: 0.0.140 => 0.0.143
+ - @vx/pattern: 0.0.140 => 0.0.143
+ - @vx/point: 0.0.136 => 0.0.143
+ - @vx/responsive: 0.0.140 => 0.0.143
+ - @vx/scale: 0.0.140 => 0.0.143
+ - @vx/shape: 0.0.142 => 0.0.143
+ - @vx/text: 0.0.140 => 0.0.143
+ - @vx/tooltip: 0.0.141 => 0.0.143
+ - @vx/voronoi: 0.0.140 => 0.0.143
+ - @vx/vx: 0.0.142 => 0.0.143
+ - @vx/zoom: 0.0.140 => 0.0.143
+```
+
+# v0.0.142
+
+#### :rocket: Enhancement
+
+- [shape] add innerRef prop to shapes [#168](https://github.com/hshoff/vx/pull/168)
+
+### :memo: Documentation
+
+- [demo] fix typo on /, fix areas tile details [#169](https://github.com/hshoff/vx/pull/169)
+
+```bash
+Changes:
+ - @vx/annotation: 0.0.141 => 0.0.142
+ - @vx/axis: 0.0.141 => 0.0.142
+ - @vx/demo: 0.0.141 => 0.0.142
+ - @vx/grid: 0.0.141 => 0.0.142
+ - @vx/marker: 0.0.141 => 0.0.142
+ - @vx/shape: 0.0.141 => 0.0.142
+ - @vx/vx: 0.0.141 => 0.0.142
+```
+
+# v0.0.141
+
+#### :rocket: Enhancement
+
+- [hierarchy] add render prop to `<Tree />` + `<Cluster />` [#163](https://github.com/hshoff/vx/pull/163)
+- [axis] render prop for axis, full control over rendering [#165](https://github.com/hshoff/vx/pull/165)
+- [event] add touch event support to localPoint(), find owner svg for single arity call  [#167](https://github.com/hshoff/vx/pull/167)
+
+#### :bug: Bug Fix
+
+- [shape] fix typo in stack order enum [#164](https://github.com/hshoff/vx/pull/164)
+- [legend] fix legend threshold [#166](https://github.com/hshoff/vx/pull/166)
+
+```bash
+Changes:
+ - @vx/annotation: 0.0.140 => 0.0.141
+ - @vx/axis: 0.0.140 => 0.0.141
+ - @vx/bounds: 0.0.140 => 0.0.141
+ - @vx/demo: 0.0.140 => 0.0.141
+ - @vx/event: 0.0.140 => 0.0.141
+ - @vx/grid: 0.0.140 => 0.0.141
+ - @vx/hierarchy: 0.0.140 => 0.0.141
+ - @vx/legend: 0.0.140 => 0.0.141
+ - @vx/marker: 0.0.140 => 0.0.141
+ - @vx/shape: 0.0.140 => 0.0.141
+ - @vx/tooltip: 0.0.140 => 0.0.141
+ - @vx/vx: 0.0.140 => 0.0.141
+ ```
+
+# v0.0.140
+  
+### :house: Internal
+  - [deps] add react 16 as peer dep, use react-test-renderer [#155](https://github.com/hshoff/vx/pull/155)
+
+```bash
+Changes:
+ - @vx/annotation: 0.0.139 => 0.0.140
+ - @vx/axis: 0.0.139 => 0.0.140
+ - @vx/bounds: 0.0.137 => 0.0.140
+ - @vx/boxplot: 0.0.136 => 0.0.140
+ - @vx/brush: 0.0.136 => 0.0.140
+ - @vx/clip-path: 0.0.136 => 0.0.140
+ - @vx/curve: 0.0.136 => 0.0.140
+ - @vx/demo: 0.0.139 => 0.0.140
+ - @vx/drag: 0.0.136 => 0.0.140
+ - @vx/event: 0.0.136 => 0.0.140
+ - @vx/geo: 0.0.136 => 0.0.140
+ - @vx/glyph: 0.0.136 => 0.0.140
+ - @vx/gradient: 0.0.136 => 0.0.140
+ - @vx/grid: 0.0.139 => 0.0.140
+ - @vx/group: 0.0.136 => 0.0.140
+ - @vx/heatmap: 0.0.136 => 0.0.140
+ - @vx/hierarchy: 0.0.139 => 0.0.140
+ - @vx/legend: 0.0.139 => 0.0.140
+ - @vx/marker: 0.0.139 => 0.0.140
+ - @vx/network: 0.0.136 => 0.0.140
+ - @vx/pattern: 0.0.136 => 0.0.140
+ - @vx/responsive: 0.0.136 => 0.0.140
+ - @vx/scale: 0.0.136 => 0.0.140
+ - @vx/shape: 0.0.139 => 0.0.140
+ - @vx/text: 0.0.136 => 0.0.140
+ - @vx/tooltip: 0.0.137 => 0.0.140
+ - @vx/voronoi: 0.0.136 => 0.0.140
+ - @vx/vx: 0.0.139 => 0.0.140
+ - @vx/zoom: 0.0.136 => 0.0.140
+```
+
+# v0.0.139
+
+#### :rocket: Enhancement
+  
+  - [shape] add `<Stack />` for streamgraphs and other fun + exciting things [#153](https://github.com/hshoff/vx/pull/153)
+  
+#### :bug: Bug Fix
+
+  - [legend] fix legend style prop [#151](https://github.com/hshoff/vx/pull/151)
+  - [hierarchy] fix name collisions [#147](https://github.com/hshoff/vx/pull/147)
+
+### :memo: Documentation
+  - [hierarchy] update links and descriptions in readme [#148](https://github.com/hshoff/vx/pull/148)
+  
+```bash
+Changes:
+ - @vx/annotation: 0.0.136 => 0.0.139
+ - @vx/axis: 0.0.138 => 0.0.139
+ - @vx/demo: 0.0.138 => 0.0.139
+ - @vx/grid: 0.0.136 => 0.0.139
+ - @vx/hierarchy: 0.0.138 => 0.0.139
+ - @vx/legend: 0.0.136 => 0.0.139
+ - @vx/marker: 0.0.136 => 0.0.139
+ - @vx/shape: 0.0.136 => 0.0.139
+ - @vx/vx: 0.0.138 => 0.0.139
+```
+
+# v0.0.138
+
+### :boom: Breaking Changes
+
+  - [axis] improve `@vx/axis` api, update docs [#142](https://github.com/hshoff/vx/pull/142)
+
+### :memo: Documentation
+  - [hierarchy] add readme for vx/hierarchy [#136](https://github.com/hshoff/vx/pull/136)
+  
+### :house: Internal
+  - [vx][pkg] bump lerna 2.0.0-beta.38 => 2.1.2 [#145](https://github.com/hshoff/vx/pull/145)
+
+```bash
+Changes:
+ - @vx/axis: 0.0.136 => 0.0.138
+ - @vx/demo: 0.0.137 => 0.0.138
+ - @vx/hierarchy: 0.0.136 => 0.0.138
+ - @vx/vx: 0.0.137 => 0.0.138
+```
+
+# v0.0.137
+
+- [vx] add one stop install pkg @vx/vx [#131](https://github.com/hshoff/vx/pull/131)
+- [bounds] move react-dom to peerDeps [#132](https://github.com/hshoff/vx/pull/132)
+
+```bash
+Changes:
+- @vx/bounds: 0.0.136 => 0.0.137
+- @vx/demo: 0.0.136 => 0.0.137
+- @vx/tooltip: 0.0.136 => 0.0.137
+- @vx/vx: 1.0.0 => 0.0.137
+```
+
+# v0.0.136
+
+- [all] add package-lock=false to .npmrc fixes [#93](https://github.com/hshoff/vx/issues/93) [#129](https://github.com/hshoff/vx/pull/129)
+- [demo][docs] sync vx-demo site documentation with packages [#125](https://github.com/hshoff/vx/pull/125)
+- [gradient][pattern] fix typos [#121](https://github.com/hshoff/vx/pull/121)
+- [demo] updated geo + network tiles [#120](https://github.com/hshoff/vx/pull/120)
+- [event] add touch point [#116](https://github.com/hshoff/vx/pull/116)
+- [gradient] Add minimal rendering tests [#114](https://github.com/hshoff/vx/pull/114)
+
+```bash
+Changes:
+- @vx/annotation: 0.0.131 => 0.0.136
+- @vx/axis: 0.0.134 => 0.0.136
+- @vx/bounds: 0.0.129 => 0.0.136
+- @vx/boxplot: 0.0.131 => 0.0.136
+- @vx/brush: 0.0.127 => 0.0.136
+- @vx/clip-path: 0.0.127 => 0.0.136
+- @vx/curve: 0.0.127 => 0.0.136
+- @vx/demo: 0.0.135 => 0.0.136
+- @vx/drag: 0.0.127 => 0.0.136
+- @vx/event: 0.0.127 => 0.0.136
+- @vx/geo: 0.0.135 => 0.0.136
+- @vx/glyph: 0.0.127 => 0.0.136
+- @vx/gradient: 0.0.129 => 0.0.136
+- @vx/grid: 0.0.131 => 0.0.136
+- @vx/group: 0.0.127 => 0.0.136
+- @vx/heatmap: 0.0.127 => 0.0.136
+- @vx/hierarchy: 0.0.127 => 0.0.136
+- @vx/legend: 0.0.127 => 0.0.136
+- @vx/marker: 0.0.131 => 0.0.136
+- @vx/mock-data: 0.0.135 => 0.0.136
+- @vx/network: 0.0.135 => 0.0.136
+- @vx/pattern: 0.0.127 => 0.0.136
+- @vx/point: 0.0.127 => 0.0.136
+- @vx/responsive: 0.0.127 => 0.0.136
+- @vx/scale: 0.0.127 => 0.0.136
+- @vx/shape: 0.0.131 => 0.0.136
+- @vx/text: 0.0.127 => 0.0.136
+- @vx/tooltip: 0.0.134 => 0.0.136
+- @vx/voronoi: 0.0.127 => 0.0.136
+- @vx/zoom: 0.0.127 => 0.0.136
+```
+
+# v0.0.135
+
+- [geo] add graticule [#111](https://github.com/hshoff/vx/pull/111)
+- [network] add @vx/network [#113](https://github.com/hshoff/vx/pull/113)
+- [demo] fix invalid JSX [#118](https://github.com/hshoff/vx/pull/118)
+- [network][geo][demo] polish for v0.0.135 [#119](https://github.com/hshoff/vx/pull/119)
+
+```bash
+Changes:
+- @vx/demo: 0.0.134 => 0.0.135
+- @vx/geo: 0.0.134 => 0.0.135
+- @vx/mock-data: 0.0.127 => 0.0.135
+- @vx/network: 0.0.127 => 0.0.135
+```
+
+# v0.0.134
+
+- [axis] make ticks more customizable [#109](https://github.com/hshoff/vx/pull/109)
+- [tooltip] add `<TooltipWithBounds />` and PropTypes to `@vx/tooltip` exports [#108](https://github.com/hshoff/vx/pull/108)
+- [demo] use @vx/geo version in deps [#106](https://github.com/hshoff/vx/pull/106)
+
+
+```bash
+Changes:
+- @vx/axis: 0.0.133 => 0.0.134
+- @vx/demo: 0.0.133 => 0.0.134
+- @vx/tooltip: 0.0.133 => 0.0.134
+```
+
+
+# v0.0.133
+
+- ignore this version, lerna got into a bad state.
+
+```bash
+Changes:
+- @vx/axis: 0.0.131 => 0.0.133
+- @vx/demo: 0.0.132 => 0.0.133
+- @vx/tooltip: 0.0.127 => 0.0.133
+```
+
+# v0.0.132
+
+- [geo] add package geo [#105](https://github.com/hshoff/vx/pull/105)
+
+```bash
+Changes:
+- @vx/demo: 0.0.131 => 0.0.132
+- @vx/geo: 0.0.132 => 0.0.132
+```
+
+# v0.0.131
+
+- [shape] LinePath.defined should default to true [#101](https://github.com/hshoff/vx/pull/101)
+- [boxplot] add docs [#102](https://github.com/hshoff/vx/pull/102)
+- [shape] add x-value mouseover to area demo [#103](https://github.com/hshoff/vx/pull/103)
+- [grid] add styles and restProps support for grid lines [#103](https://github.com/hshoff/vx/pull/103)
+
+```bash
+Changes:
+- @vx/annotation: 0.0.130 => 0.0.131
+- @vx/axis: 0.0.130 => 0.0.131
+- @vx/boxplot: 0.0.127 => 0.0.131
+- @vx/demo: 0.0.130 => 0.0.131
+- @vx/grid: 0.0.130 => 0.0.131
+- @vx/marker: 0.0.130 => 0.0.131
+- @vx/shape: 0.0.130 => 0.0.131
+```
+
+# v0.0.130
+
+- [shape] Add tests for Arc, AreaClosed, & Line, fix AreaClosed error [#95](https://github.com/hshoff/vx/pull/95)
+- [Axis] Add tests to Axis.test.js [#94](https://github.com/hshoff/vx/pull/94)
+
+```bash
+Changes:
+- @vx/annotation: 0.0.127 => 0.0.130
+- @vx/axis: 0.0.127 => 0.0.130
+- @vx/demo: 0.0.129 => 0.0.130
+- @vx/grid: 0.0.127 => 0.0.130
+- @vx/marker: 0.0.127 => 0.0.130
+- @vx/shape: 0.0.127 => 0.0.130
+```
+
+# v0.0.129
+
+- [gradient] add <RadialGradient /> [#90](https://github.com/hshoff/vx/pull/90)
+- [bounds] add `@vx/bounds` package with `withBoundingRects()` HOC  [#91](https://github.com/hshoff/vx/pull/91)
+
+```bash
+Changes:
+- @vx/bounds: 0.0.128 => 0.0.129
+- @vx/demo: 0.0.128 => 0.0.129
+- @vx/gradient: 0.0.128 => 0.0.129
+```
+
+# v0.0.128
+
+- ignore this one, `lerna publish` failed midway through
+
+```bash
+Changes:
+- @vx/bounds: 0.0.0 => 0.0.128
+- @vx/demo: 0.0.127 => 0.0.128
+- @vx/gradient: 0.0.127 => 0.0.128
+```
 
 # v0.0.127
 
