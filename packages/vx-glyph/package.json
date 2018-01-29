@@ -1,7 +1,8 @@
 {
   "name": "@vx/glyph",
-  "version": "0.0.143",
-  "description": "vx glyph ",
+  "version": "0.0.153",
+  "description": "vx glyph",
+  "sideEffects": false,
   "main": "build/index.js",
   "scripts": {
     "build": "make build SRC=./src",
@@ -48,7 +49,7 @@
     "react": "^15.0.0-0 || ^16.0.0-0"
   },
   "dependencies": {
-    "@vx/group": "0.0.143",
+    "@vx/group": "0.0.153",
     "classnames": "^2.2.5",
     "d3-shape": "^1.2.0"
   },

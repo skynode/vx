@@ -19,9 +19,9 @@ export default withScreenSize(
     margin = { top: 0, left: 0, right: 0, bottom: 80 },
   }) => {
     const padding = 40;
-    const height = screenHeight * 0.6;
     let width = screenWidth - padding;
     if (width > 800) width = 800;
+    const height = width * 0.6;
 
     return (
       <Page title={title}>
@@ -45,12 +45,16 @@ export default withScreenSize(
               events,
             })}
           </div>
-          <div style={{ width: width }}>
-            <h2>Code</h2>
-          </div>
-          <div className="code" style={{ width: width }}>
-            <Codeblock>{children}</Codeblock>
-          </div>
+          {children && (
+            <div style={{ width: width }}>
+              <h2>Code</h2>
+            </div>
+          )}
+          {children && (
+            <div className="code" style={{ width: width }}>
+              <Codeblock>{children}</Codeblock>
+            </div>
+          )}
         </div>
         <div style={{ marginTop: '40px' }}>
           <Gallery />
@@ -64,7 +68,7 @@ export default withScreenSize(
           .container h1 {
             margin-top: 15px;
             line-height: 0.9em;
-            letter-spacing: -.03em;
+            letter-spacing: -0.03em;
           }
           .container h2 {
             margin-top: 15px;

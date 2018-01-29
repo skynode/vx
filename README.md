@@ -12,10 +12,13 @@
   <a href='https://coveralls.io/github/hshoff/vx?branch=master'>
     <img src='https://coveralls.io/repos/github/hshoff/vx/badge.svg?branch=master' alt='Coverage Status' />
   </a>
-  <a title="@vx/demo npm downloads" href="https://www.npmjs.com/package/@vx/demo">
-    <img src="https://img.shields.io/npm/dm/@vx/demo.svg?style=flat-square" />
+  <a title="@vx/shape npm downloads" href="https://www.npmjs.com/package/@vx/shape">
+    <img src="https://img.shields.io/npm/dm/@vx/shape.svg?style=flat-square" />
   </a>
   <a href="https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fhshoff%2Fvx?ref=badge_shield" alt="FOSSA Status">     <img src="https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fhshoff%2Fvx.svg?type=shield"/>
+  </a>
+  <a href="https://lernajs.io/" alt="lerna">
+     <img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg"/>
   </a>
 </p>
 
@@ -173,6 +176,7 @@ Lots coming soon, check out the [roadmap](./ROADMAP.md).
 - Collapsible tree with react-move by [@techniq](https://github.com/techniq) ([Demo](https://codesandbox.io/s/n3w687vmqj)) ([Radial demo](https://codesandbox.io/s/vmqwrkl395)) ([More info](https://github.com/hshoff/vx/issues/162#issuecomment-335029517))
 - Bitcoin 30-day price by [@hshoff](https://github.com/hshoff) ([Demo](https://viewsource.now.sh/bitcoin)) ([Github](https://github.com/hshoff/viewsource#1-bitcoin-price-chart)) ([YouTube](https://www.youtube.com/watch?v=oeE2tuspdHg))
 - Ethereum candlestick chart by [@hshoff](https://github.com/hshoff) ([Demo](https://viewsource.now.sh/ethereum)) ([Github](https://github.com/hshoff/viewsource#2-ethereum-candlestick-chart))
+- Song data visualization through spotify by [@bother7](https://github.com/bother7) ([Demo](https://spotalyzer-frontend.herokuapp.com/demo) ([Github](https://github.com/bother7/spotalyzer_frontend)
 - Have a project that's using vx? Open a pull request and we'll add it to the list.
 
 ## FAQ

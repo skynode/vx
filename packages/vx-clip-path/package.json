@@ -1,7 +1,8 @@
 {
   "name": "@vx/clip-path",
-  "version": "0.0.143",
+  "version": "0.0.153",
   "description": "vx clip-path",
+  "sideEffects": false,
   "main": "build/index.js",
   "scripts": {
     "build": "make build SRC=./src",

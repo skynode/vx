@@ -1,7 +1,8 @@
 {
   "name": "@vx/pattern",
-  "version": "0.0.143",
+  "version": "0.0.153",
   "description": "vx pattern",
+  "sideEffects": false,
   "main": "build/index.js",
   "files": [
     "build"

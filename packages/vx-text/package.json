@@ -1,7 +1,8 @@
 {
   "name": "@vx/text",
-  "version": "0.0.143",
+  "version": "0.0.153",
   "description": "vx text",
+  "sideEffects": false,
   "main": "build/index.js",
   "files": [
     "build"
@@ -22,14 +23,16 @@
     "visualization",
     "chart"
   ],
-  "author": "@hshoff",
+  "author": "@techniq",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hshoff/vx/issues"
   },
   "homepage": "https://github.com/hshoff/vx#readme",
   "dependencies": {
-    "classnames": "^2.2.5"
+    "classnames": "^2.2.5",
+    "lodash": "^4.17.4",
+    "reduce-css-calc": "^1.3.0"
   },
   "devDependencies": {
     "babel-jest": "^21.2.0",

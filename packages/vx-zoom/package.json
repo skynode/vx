@@ -1,7 +1,8 @@
 {
   "name": "@vx/zoom",
-  "version": "0.0.143",
+  "version": "0.0.153",
   "description": "vx zoom",
+  "sideEffects": false,
   "main": "build/index.js",
   "scripts": {
     "build": "make build SRC=./src",

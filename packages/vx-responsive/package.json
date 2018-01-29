@@ -1,7 +1,8 @@
 {
   "name": "@vx/responsive",
-  "version": "0.0.143",
+  "version": "0.0.153",
   "description": "vx responsive svg",
+  "sideEffects": false,
   "main": "build/index.js",
   "files": [
     "build"
@@ -42,7 +43,8 @@
     "regenerator-runtime": "^0.10.5"
   },
   "dependencies": {
-    "lodash": "^4.0.8"
+    "lodash": "^4.0.8",
+    "resize-observer-polyfill": "1.5.0"
   },
   "peerDependencies": {
     "react": "^15.0.0-0 || ^16.0.0-0"

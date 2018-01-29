@@ -1,7 +1,8 @@
 {
   "name": "@vx/mock-data",
-  "version": "0.0.144",
+  "version": "0.0.153",
   "description": "vx mock data",
+  "sideEffects": false,
   "main": "build/index.js",
   "scripts": {
     "build": "make build SRC=./src",

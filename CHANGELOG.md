@@ -1,5 +1,18 @@
 # Changelog
 
+- [v0.0.157](#v00157)
+- [v0.0.156](#v00156)
+- [v0.0.155](#v00155)
+- [v0.0.154](#v00154)
+- [v0.0.153](#v00153)
+- [v0.0.152](#v00152)
+- [v0.0.151](#v00151)
+- [v0.0.150](#v00150)
+- [v0.0.149](#v00149)
+- [v0.0.148](#v00148)
+- [v0.0.147](#v00147)
+- [v0.0.146](#v00146)
+- [v0.0.145](#v00145)
 - [v0.0.144](#v00144)
 - [v0.0.143](#v00143)
 - [v0.0.142](#v00142)
@@ -30,6 +43,336 @@
 - [v0.0.112](#v00112)
 
 ------
+
+# v0.0.157
+
+#### :rocket: Enhancements
+
+- [drag] remove `svg` prop. This was causing hacky problems like calling `forceUpdate` in `cDM`. `localPoint()` now finds svg from the event argument [#233](https://github.com/hshoff/vx/pull/233)
+
+#### :memo: Documentation
+
+- [demo] update drag demos, add `touch-action: none` on drag demos so no scrolling when dragging [#233](https://github.com/hshoff/vx/pull/233)
+
+#### :trophy: Contributers
+
+- [hshoff](https://github.com/hshoff)
+
+```bash
+Changes:
+ - @vx/demo: 0.0.156 => 0.0.157
+ - @vx/drag: 0.0.156 => 0.0.157
+ - @vx/vx: 0.0.156 => 0.0.157
+```
+
+# v0.0.156
+
+#### :rocket: Enhancements
+
+- [drag] add `resetOnStart` prop (default to false). When true, it will reset drag `x,y` to the start point from the mousedown/touchstart event and `dx,dy` to 0 on drag start [#231](https://github.com/hshoff/vx/pull/231)
+
+#### :memo: Documentation
+
+- [demo] add /drag-ii demo of a drawboard made with drag [#231](https://github.com/hshoff/vx/pull/231)
+
+#### :trophy: Contributers
+
+- [hshoff](https://github.com/hshoff)
+
+```bash
+Changes:
+ - @vx/demo: 0.0.155 => 0.0.156
+ - @vx/drag: 0.0.155 => 0.0.156
+ - @vx/vx: 0.0.155 => 0.0.156
+```
+
+# v0.0.155
+
+#### :rocket: Enhancements
+
+- [drag] add `<Drag />` component + demo [#229](https://github.com/hshoff/vx/pull/229)
+
+#### :trophy: Contributers
+
+- [hshoff](https://github.com/hshoff)
+
+```bash
+Changes:
+ - @vx/demo: 0.0.154 => 0.0.155
+ - @vx/drag: 0.0.153 => 0.0.155
+ - @vx/vx: 0.0.154 => 0.0.155
+```
+
+# v0.0.154
+
+#### :rocket: Enhancements
+
+- [legend] make legend items clickable, add `<LegendItem />` propTypes, add click test [#227](https://github.com/hshoff/vx/pull/227)
+
+#### :trophy: Contributers
+
+- [hshoff](https://github.com/hshoff)
+
+```bash
+Changes:
+ - @vx/demo: 0.0.153 => 0.0.154
+ - @vx/legend: 0.0.153 => 0.0.154
+ - @vx/vx: 0.0.153 => 0.0.154
+```
+
+# v0.0.153
+
+#### :house: Internal
+
+- [internal] add sideEffects: false to pkg for webpack 4 [#225](https://github.com/hshoff/vx/pull/225)
+
+#### :trophy: Contributers
+
+- [hshoff](https://github.com/hshoff)
+
+```bash
+Changes:
+ - @vx/annotation: 0.0.147 => 0.0.153
+ - @vx/axis: 0.0.152 => 0.0.153
+ - @vx/bounds: 0.0.147 => 0.0.153
+ - @vx/boxplot: 0.0.143 => 0.0.153
+ - @vx/brush: 0.0.143 => 0.0.153
+ - @vx/clip-path: 0.0.143 => 0.0.153
+ - @vx/curve: 0.0.143 => 0.0.153
+ - @vx/demo: 0.0.152 => 0.0.153
+ - @vx/drag: 0.0.143 => 0.0.153
+ - @vx/event: 0.0.143 => 0.0.153
+ - @vx/geo: 0.0.150 => 0.0.153
+ - @vx/glyph: 0.0.143 => 0.0.153
+ - @vx/gradient: 0.0.143 => 0.0.153
+ - @vx/grid: 0.0.147 => 0.0.153
+ - @vx/group: 0.0.143 => 0.0.153
+ - @vx/heatmap: 0.0.143 => 0.0.153
+ - @vx/hierarchy: 0.0.144 => 0.0.153
+ - @vx/legend: 0.0.143 => 0.0.153
+ - @vx/marker: 0.0.147 => 0.0.153
+ - @vx/mock-data: 0.0.147 => 0.0.153
+ - @vx/network: 0.0.143 => 0.0.153
+ - @vx/pattern: 0.0.143 => 0.0.153
+ - @vx/point: 0.0.143 => 0.0.153
+ - @vx/responsive: 0.0.152 => 0.0.153
+ - @vx/scale: 0.0.152 => 0.0.153
+ - @vx/shape: 0.0.147 => 0.0.153
+ - @vx/stats: 0.0.152 => 0.0.153
+ - @vx/text: 0.0.152 => 0.0.153
+ - @vx/tooltip: 0.0.148 => 0.0.153
+ - @vx/voronoi: 0.0.143 => 0.0.153
+ - @vx/vx: 0.0.152 => 0.0.153
+ - @vx/zoom: 0.0.143 => 0.0.153
+```
+
+# v0.0.152
+
+#### :rocket: Enhancements
+
+- [text] add `fontWeight` option to vx-text demo [#215](https://github.com/hshoff/vx/pull/215)
+
+#### :memo: Documentation
+
+- [demo] add vx-text tile and update /text demo [#214](https://github.com/hshoff/vx/pull/214)
+- [responsive] add description and example of each component and enhancer [#217](https://github.com/hshoff/vx/pull/217)
+
+#### :bug: Bug Fix
+
+- [text] fix memoized `getStringWidth` ignoring styles [#215](https://github.com/hshoff/vx/pull/215)
+- [text] remove default width and height from measurement SVG [#219](https://github.com/hshoff/vx/pull/219)
+- [scale] fix scalePower api to take in exponent instead of base [#223](https://github.com/hshoff/vx/pull/223)
+
+#### :house: Internal
+
+- [travis] fix for travis failing for timing out when [not receiving output for 10min](https://docs.travis-ci.com/user/common-build-problems/#Build-times-out-because-no-output-was-received) [#224](https://github.com/hshoff/vx/pull/224)
+- [vx][test] fix `@vx/vx` text test. It was looking for `TextOutline` export which was removed with the [new `@vx/text`](https://github.com/hshoff/vx/pull/208) [#224](https://github.com/hshoff/vx/pull/224)
+- [axis] bump `prop-types` dep and use `^` [#224](https://github.com/hshoff/vx/pull/224)
+
+#### :trophy: Contributers
+
+- [techniq](https://github.com/techniq)
+- [hshoff](https://github.com/hshoff)
+- [katerineknox](https://github.com/katerineknox)
+- [crcarlo](https://github.com/crcarlo)
+
+```bash
+Changes:
+ - @vx/axis: 0.0.151 => 0.0.152
+ - @vx/demo: 0.0.151 => 0.0.152
+ - @vx/responsive: 0.0.151 => 0.0.152
+ - @vx/scale: 0.0.151 => 0.0.152
+ - @vx/stats: 0.0.151 => 0.0.152
+ - @vx/text: 0.0.151 => 0.0.152
+ - @vx/vx: 0.0.151 => 0.0.152
+```
+
+# v0.0.151
+
+- ignore this one, v0.0.152 includes what v0.0.151 was supposed be. i messed up the publish.
+
+```bash
+Changes:
+ - @vx/axis: 0.0.147 => 0.0.151
+ - @vx/demo: 0.0.150 => 0.0.151
+ - @vx/responsive: 0.0.150 => 0.0.151
+ - @vx/scale: 0.0.143 => 0.0.151
+ - @vx/stats: 0.0.148 => 0.0.151
+ - @vx/text: 0.0.150 => 0.0.151
+ - @vx/vx: 0.0.150 => 0.0.151
+```
+
+# v0.0.150
+
+#### :boom: Breaking Changes
+
+- [text] Removes `<TextWrap>`, `<TextOutline>` and `<TextBackground>` components, which were incomplete [#208](https://github.com/hshoff/vx/pull/208)
+
+#### :rocket: Enhancements
+
+- [geo] Added pointRadius and fixed center [#213](https://github.com/hshoff/vx/pull/213)
+- [text] Add new `<Text>`, with the following features
+  - Word-wrapping (when width prop is defined)
+  - Vertical alignment (verticalAnchor prop)
+  - Rotation (angle prop)
+  - Scale-to-fit text (scaleToFit prop)
+
+#### :bug: Bug Fix
+
+- [geo] Fixed center typo [#213](https://github.com/hshoff/vx/pull/213)
+
+#### :memo: Documentation
+
+- [responsive] Backticks import not working so, copy paste broken [#212](https://github.com/hshoff/vx/pull/212)
+
+#### :house: Internal
+
+- [text] Update `vx-text` author to @techniq [#210](https://github.com/hshoff/vx/pull/210)
+
+```bash
+Changes:
+ - @vx/demo: 0.0.149 => 0.0.150
+ - @vx/geo: 0.0.143 => 0.0.150
+ - @vx/responsive: 0.0.149 => 0.0.150
+ - @vx/text: 0.0.143 => 0.0.150
+ - @vx/vx: 0.0.149 => 0.0.150
+```
+
+# v0.0.149
+
+#### :rocket: Enhancements
+
+- [responsive] bump `resize-observer-polyfill` [#206](https://github.com/hshoff/vx/pull/206)
+
+#### :bug: Bug Fix
+
+- [demo] add overflow hidden on flex: 1 `<ParentSize />` parents [#206](https://github.com/hshoff/vx/pull/206)
+
+```bash
+Changes:
+ - @vx/demo: 0.0.148 => 0.0.149
+ - @vx/responsive: 0.0.147 => 0.0.149
+ - @vx/vx: 0.0.148 => 0.0.149
+```
+
+# v0.0.148
+
+#### :bug: Bug Fix
+
+- [stats] [boxplot] fix container props calculation [#203](https://github.com/hshoff/vx/pull/203)
+- [tooltip] fix tootlip with bounds offset [#204](https://github.com/hshoff/vx/pull/204)
+
+```bash
+Changes:
+ - @vx/demo: 0.0.147 => 0.0.148
+ - @vx/stats: 0.0.147 => 0.0.148
+ - @vx/tooltip: 0.0.147 => 0.0.148
+ - @vx/vx: 0.0.147 => 0.0.148
+ ```
+
+# v0.0.147
+
+#### :boom: Breaking Changes
+
+- [shape] deep links to `@vx/shape/shapes/Link{Horizontal, Vertical, Radial}.js` => `@vx/shape/shapes/link/diagonal/Link{Horizontal, Vertical, Radial}.js`. [#194](https://github.com/hshoff/vx/pull/194)
+
+#### :rocket: Enhancements
+
+- [tooltip] add offset props to `<TooltipWithBounds />`. [#193](https://github.com/hshoff/vx/pull/193)
+- [shape] Add support for step, curve, and line links. [#194](https://github.com/hshoff/vx/pull/194)
+- [responsive] add `<ParentSize />` component. [#198](https://github.com/hshoff/vx/pull/198)
+- [stats] added vx-stats for statistic related glyphs (boxplot and violinplot). [#197](https://github.com/hshoff/vx/pull/197) **note:** `@vx/boxplot` is deprecated in favor of `@vx/stats` in a future release `@vx/boxplot` will be removed
+
+#### :house: Internal
+
+- [demo] update gallery tiles to use `<ParentSize />`. [#198](https://github.com/hshoff/vx/pull/198)
+- [demo] add /responsive gallery tile + page. [#198](https://github.com/hshoff/vx/pull/198)
+
+```bash
+Changes:
+ - @vx/annotation: 0.0.146 => 0.0.147
+ - @vx/axis: 0.0.146 => 0.0.147
+ - @vx/bounds: 0.0.143 => 0.0.147
+ - @vx/demo: 0.0.146 => 0.0.147
+ - @vx/grid: 0.0.146 => 0.0.147
+ - @vx/marker: 0.0.146 => 0.0.147
+ - @vx/mock-data: 0.0.144 => 0.0.147
+ - @vx/responsive: 0.0.143 => 0.0.147
+ - @vx/shape: 0.0.146 => 0.0.147
+ - @vx/stats: 0.0.143 => 0.0.147
+ - @vx/tooltip: 0.0.143 => 0.0.147
+ - @vx/vx: 0.0.146 => 0.0.147
+```
+
+# v0.0.146
+
+#### :rocket: Enhancements
+
+- [shape] add `<BarStackHorizontal />` [#185](https://github.com/hshoff/vx/pull/185)
+
+#### :memo: Documentation
+
+- [demo] add `<BarStackHorizontal />` [#185](https://github.com/hshoff/vx/pull/185)
+- [demo] tile updates [#186](https://github.com/hshoff/vx/pull/186)
+
+#### :house: Internal
+
+- [shape] remove build/index.js [#186](https://github.com/hshoff/vx/pull/186)
+
+
+```bash
+Changes:
+ - @vx/annotation: 0.0.145 => 0.0.146
+ - @vx/axis: 0.0.145 => 0.0.146
+ - @vx/demo: 0.0.145 => 0.0.146
+ - @vx/grid: 0.0.145 => 0.0.146
+ - @vx/marker: 0.0.145 => 0.0.146
+ - @vx/shape: 0.0.145 => 0.0.146
+ - @vx/vx: 0.0.145 => 0.0.146
+```
+
+# v0.0.145
+
+#### :rocket: Enhancements
+
+- [shape] add `<Area />` and tests [#183](https://github.com/hshoff/vx/pull/183)
+- [demo] add Radar chart [#180](https://github.com/hshoff/vx/pull/180)
+- [axis] add additional tests [#161](https://github.com/hshoff/vx/pull/161)
+
+#### :bug: Bug Fix
+
+- [axis] less restrictive tickValue propTypes [#184](https://github.com/hshoff/vx/pull/184)
+
+```bash
+Changes:
+ - @vx/annotation: 0.0.144 => 0.0.145
+ - @vx/axis: 0.0.144 => 0.0.145
+ - @vx/demo: 0.0.144 => 0.0.145
+ - @vx/grid: 0.0.144 => 0.0.145
+ - @vx/marker: 0.0.144 => 0.0.145
+ - @vx/shape: 0.0.144 => 0.0.145
+ - @vx/vx: 0.0.144 => 0.0.145
+```
 
 # v0.0.144
 

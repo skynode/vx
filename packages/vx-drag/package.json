@@ -1,7 +1,8 @@
 {
   "name": "@vx/drag",
-  "version": "0.0.143",
+  "version": "0.0.157",
   "description": "vx drag",
+  "sideEffects": false,
   "main": "build/index.js",
   "scripts": {
     "build": "make build SRC=./src",
@@ -52,5 +53,8 @@
       "raf/polyfill",
       "<rootDir>/test/enzyme-setup.js"
     ]
+  },
+  "dependencies": {
+    "@vx/event": "0.0.153"
   }
 }

@@ -1,7 +1,8 @@
 {
   "name": "@vx/tooltip",
-  "version": "0.0.143",
+  "version": "0.0.153",
   "description": "vx tooltip",
+  "sideEffects": false,
   "main": "build/index.js",
   "scripts": {
     "build": "make build SRC=./src",
@@ -26,7 +27,7 @@
   },
   "homepage": "https://github.com/hshoff/vx#readme",
   "dependencies": {
-    "@vx/bounds": "0.0.143",
+    "@vx/bounds": "0.0.153",
     "classnames": "^2.2.5",
     "prop-types": "^15.5.10"
   },

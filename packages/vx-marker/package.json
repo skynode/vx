@@ -1,7 +1,8 @@
 {
   "name": "@vx/marker",
-  "version": "0.0.144",
+  "version": "0.0.153",
   "description": "vx marker",
+  "sideEffects": false,
   "main": "build/index.js",
   "files": [
     "build"
@@ -42,8 +43,8 @@
     "regenerator-runtime": "^0.10.5"
   },
   "dependencies": {
-    "@vx/group": "0.0.143",
-    "@vx/shape": "0.0.144",
+    "@vx/group": "0.0.153",
+    "@vx/shape": "0.0.153",
     "classnames": "^2.2.5"
   },
   "peerDependencies": {

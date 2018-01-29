@@ -1,7 +1,8 @@
 {
   "name": "@vx/group",
-  "version": "0.0.143",
+  "version": "0.0.153",
   "description": "vx group",
+  "sideEffects": false,
   "main": "build/index.js",
   "scripts": {
     "build": "make build SRC=./src",

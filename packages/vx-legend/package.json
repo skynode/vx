@@ -1,7 +1,8 @@
 {
   "name": "@vx/legend",
-  "version": "0.0.143",
+  "version": "0.0.154",
   "description": "vx legend",
+  "sideEffects": false,
   "main": "build/index.js",
   "scripts": {
     "build": "make build SRC=./src",
@@ -45,7 +46,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@vx/group": "0.0.143",
+    "@vx/group": "0.0.153",
     "classnames": "^2.2.5",
     "prop-types": "^15.5.10"
   },

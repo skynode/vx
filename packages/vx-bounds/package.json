@@ -1,7 +1,8 @@
 {
   "name": "@vx/bounds",
-  "version": "0.0.143",
+  "version": "0.0.153",
   "description": "Utilities to make your life with bounding boxes better",
+  "sideEffects": false,
   "main": "build/index.js",
   "scripts": {
     "build": "make build SRC=./src",

@@ -1,7 +1,8 @@
 {
   "name": "@vx/hierarchy",
-  "version": "0.0.144",
+  "version": "0.0.153",
   "description": "vx tree",
+  "sideEffects": false,
   "main": "build/index.js",
   "scripts": {
     "build": "make build SRC=./src",
@@ -42,7 +43,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@vx/group": "0.0.143",
+    "@vx/group": "0.0.153",
     "classnames": "^2.2.5",
     "d3-hierarchy": "^1.1.4"
   },
