@@ -15,6 +15,9 @@
   <a title="@vx/shape npm downloads" href="https://www.npmjs.com/package/@vx/shape">
     <img src="https://img.shields.io/npm/dm/@vx/shape.svg?style=flat-square" />
   </a>
+  <a title="Join the community on Spectrum" href="https://spectrum.chat/vx">
+    <img src="https://withspectrum.github.io/badge/badge.svg" />
+  </a>
   <a href="https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fhshoff%2Fvx?ref=badge_shield" alt="FOSSA Status">     <img src="https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fhshoff%2Fvx.svg?type=shield"/>
   </a>
   <a href="https://lernajs.io/" alt="lerna">
@@ -173,10 +176,13 @@ Lots coming soon, check out the [roadmap](./ROADMAP.md).
 - [Flaque/data-structures](https://github.com/Flaque/data-structures) ([Interactive explanation of the trie data structure](https://trie.now.sh/))
 - [dylanmoz/trello](https://github.com/DylanMoz/dylanmoz.github.io/blob/source/src/pages/trello/TrelloGraph.js) ([Demo](http://dylanmoz.github.io/trello/)) ([How to Make Beautiful Graphs With vx and React-Motion](https://devblog.classy.org/how-to-make-beautiful-graphs-with-vx-and-react-motion-6ffe7aecf6f3))
 - [gkunthara/Crypto-Chart](https://github.com/gkunthara/Crypto-Chart) ([Demo](https://www.crypto-chart.com/home)) ([Tutorial](https://medium.com/@georgekunthara/after-the-tutorial-the-first-react-app-4dce6645634e))
-- Collapsible tree with react-move by [@techniq](https://github.com/techniq) ([Demo](https://codesandbox.io/s/n3w687vmqj)) ([Radial demo](https://codesandbox.io/s/vmqwrkl395)) ([More info](https://github.com/hshoff/vx/issues/162#issuecomment-335029517))
+- Collapsible tree with [`react-move`](https://github.com/react-tools/react-move) by [@techniq](https://github.com/techniq) ([Demo](https://codesandbox.io/s/n3w687vmqj)) ([Radial demo](https://codesandbox.io/s/vmqwrkl395)) ([More info](https://github.com/hshoff/vx/issues/162#issuecomment-335029517))
 - Bitcoin 30-day price by [@hshoff](https://github.com/hshoff) ([Demo](https://viewsource.now.sh/bitcoin)) ([Github](https://github.com/hshoff/viewsource#1-bitcoin-price-chart)) ([YouTube](https://www.youtube.com/watch?v=oeE2tuspdHg))
 - Ethereum candlestick chart by [@hshoff](https://github.com/hshoff) ([Demo](https://viewsource.now.sh/ethereum)) ([Github](https://github.com/hshoff/viewsource#2-ethereum-candlestick-chart))
-- Song data visualization through spotify by [@bother7](https://github.com/bother7) ([Demo](https://spotalyzer-frontend.herokuapp.com/demo) ([Github](https://github.com/bother7/spotalyzer_frontend)
+- Song data visualization through spotify by [@bother7](https://github.com/bother7) ([Demo](https://spotalyzer-frontend.herokuapp.com/demo) ([Github](https://github.com/bother7/spotalyzer_frontend))
+- Investment Calculator ([website](https://investmentcalculator.io/))
+- Cryptagon - crypto portfolio tracker ([website](https://cryptagon.io/))
+- Animation with [`react-spring`](https://github.com/drcmda/react-spring/) by [@drcmda](https://github.com/drcmda) ([Demo](https://codesandbox.io/embed/j3x61vjz5v))
 - Have a project that's using vx? Open a pull request and we'll add it to the list.
 
 ## FAQ
@@ -186,8 +192,19 @@ Lots coming soon, check out the [roadmap](./ROADMAP.md).
     > vx stands for visualization components.
 
 1. Do you plan on supporting animation/transitions?
-
+    > A common criticism of vx is it doesn't have animation baked in, but this was a concious choice. It's a powerful feature to not bake it in.
+    >
+    > Imagine your app already bundles `react-motion`, adding a hypothetical `@vx/animation` is bloat. Since vx is react, it already supports all react animation libs.
+    >
+    > Charting libraries are like style guides. Each org or app will eventually want full control over their own implementation. 
+    >
+    > vx makes this easier for everyone. No need to reinvent the wheel each time.
+    >
     > more info: https://github.com/hshoff/vx/issues/6
+    >
+    > examples:
+    >   - Collapsible tree with [`react-move`](https://github.com/react-tools/react-move) by [@techniq](https://github.com/techniq) ([Demo](https://codesandbox.io/s/n3w687vmqj)) ([Radial demo](https://codesandbox.io/s/vmqwrkl395))
+    >   - Animation with `react-spring` by [@drcmda](https://github.com/drcmda) ([Demo](https://codesandbox.io/embed/j3x61vjz5v))
 
 1. Do I have to use every package to make a chart?
 
@@ -204,6 +221,38 @@ Lots coming soon, check out the [roadmap](./ROADMAP.md).
 1. I like using d3.
 
     > Me too.
+
+## Development
+[lerna](https://github.com/lerna/lerna/) is used to manage versions and dependencies between
+packages in the umbrella vx repo.
+
+```
+vx/
+  lerna.json
+  package.json
+  packages/
+    vx-package-1/
+      src/
+      test/
+      build/
+      package.json
+      ...
+    vx-package-2/
+      ...
+    ...
+```
+
+For easiest development clone or fork vx, install the _root_ dependencies including lerna,
+then have lerna install package dependencies and manage the symlinking between packages for you by using the [`lerna bootstrap`](https://github.com/lerna/lerna#bootstrap) command:
+
+```sh
+git clone git@github.com:hshoff/vx.git # or your fork
+cd vx
+npm install # installs root vx deps
+./node_modules/.bin/lerna bootstrap # installs all package deps, sym-links within-vx deps
+```
+
+Upon modification of a given package you can run `npm run build` from that package's folder to re-build the package with your changes. You can use the local dev server within `packages/vx-demo` to view and iterate on your changes in the gallery. From the `packages/vx-demo` folder run `npm run dev` to start the next server which (if correctly sym-linked with lerna) will also watch for changes you make to other packages.
 
 :v:
 

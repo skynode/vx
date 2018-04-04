@@ -1,5 +1,7 @@
 # Changelog
 
+- [v0.0.159](#v00159)
+- [v0.0.158](#v00158)
 - [v0.0.157](#v00157)
 - [v0.0.156](#v00156)
 - [v0.0.155](#v00155)
@@ -44,6 +46,96 @@
 
 ------
 
+# v0.0.159
+
+#### :rocket: Enhancements
+
+- [axis] By default `<Axis />` components now use `@vx/text` to render tick labels. This enables multi line labels and scaling text to fit in a certain amount of space. [#260](https://github.com/hshoff/vx/pull/260)
+
+Example:
+```jsx
+<Axis 
+  {...axisProps}
+  tickLabelProps = (tickValue, index) => ({
+    textAnchor: 'middle',
+    verticalAnchor: 'middle',
+    width: 100,
+    scaleToFit: true
+  })
+/>
+```
+
+- [axis] `<Axis />` components got a new prop `tickComponent` to enable rendering of custom ticks. With this prop one can completely customize ticks without having to create a new custom `<Axis />` component. [#260](https://github.com/hshoff/vx/pull/260)
+
+Example:
+```jsx
+<Axis
+  {...axisProps}
+  tickComponent={({ x, y, formattedValue }) => (
+    <g>
+      <circle cx={x} cy={y} r={2} fill='rebeccapurple' />
+      <text x={x + 4} y={y}>{formattedValue}</text>
+    </g>
+  )}
+/>
+```
+
+`tickComponent` accepts a function and gets called with the following attribute:
+```js
+tickComponent({ x, y, formattedValue, ...tickLabelPropsObj })
+```
+
+#### :memo: Documentation
+
+- [axis] update `@vx/axis` documentation. [#260](https://github.com/hshoff/vx/pull/260)
+- [demo] fix bargroup example code. [#250](https://github.com/hshoff/vx/pull/250)
+- [demo] fix barstack example code. [#249](https://github.com/hshoff/vx/pull/249)
+- [text] fix readme.md of `@vx/text` package. [#257](https://https://github.com/hshoff/vx/pull/257)
+
+#### :trophy: Contributors
+
+ - [bulat-f](https://github.com/bulat-f)
+ - [sto3psl](https://github.com/sto3psl)
+ - [browniefed](https://github.com/browniefed)
+
+```bash
+Changes:
+ - @vx/axis: 0.0.158 => 0.0.159
+ - @vx/demo: 0.0.158 => 0.0.159
+ - @vx/text: 0.0.153 => 0.0.159
+ - @vx/vx: 0.0.158 => 0.0.159
+ ```
+
+# v0.0.158
+
+#### :rocket: Enhancements
+
+- [responsive] add debounceTime prop to `<ParentSize />` with a default of 300ms. [#241](https://github.com/hshoff/vx/pull/241)
+- [tooltip] `<TooltipWithBounds />` now also reconsiders window bounds [#240](https://github.com/hshoff/vx/pull/240)
+
+#### :house: Internal
+
+- [demo] fix streamgraph transparent fill [#242](https://github.com/hshoff/vx/pull/242)
+
+#### :trophy: Contributors
+
+- [AlexJuarez](https://github.com/AlexJuarez)
+- [manuelrocha88](https://github.com/manuelrocha88)
+- [hshoff](https://github.com/hshoff)
+
+```bash
+Changes:
+ - @vx/annotation: 0.0.153 => 0.0.158
+ - @vx/axis: 0.0.153 => 0.0.158
+ - @vx/demo: 0.0.157 => 0.0.158
+ - @vx/grid: 0.0.153 => 0.0.158
+ - @vx/marker: 0.0.153 => 0.0.158
+ - @vx/responsive: 0.0.153 => 0.0.158
+ - @vx/shape: 0.0.153 => 0.0.158
+ - @vx/tooltip: 0.0.153 => 0.0.158
+ - @vx/vx: 0.0.157 => 0.0.158
+```
+
 # v0.0.157
 
 #### :rocket: Enhancements
@@ -54,7 +146,7 @@
 
 - [demo] update drag demos, add `touch-action: none` on drag demos so no scrolling when dragging [#233](https://github.com/hshoff/vx/pull/233)
 
-#### :trophy: Contributers
+#### :trophy: Contributors
 
 - [hshoff](https://github.com/hshoff)
 
@@ -75,7 +167,7 @@ Changes:
 
 - [demo] add /drag-ii demo of a drawboard made with drag [#231](https://github.com/hshoff/vx/pull/231)
 
-#### :trophy: Contributers
+#### :trophy: Contributors
 
 - [hshoff](https://github.com/hshoff)
 
@@ -92,7 +184,7 @@ Changes:
 
 - [drag] add `<Drag />` component + demo [#229](https://github.com/hshoff/vx/pull/229)
 
-#### :trophy: Contributers
+#### :trophy: Contributors
 
 - [hshoff](https://github.com/hshoff)
 
@@ -109,7 +201,7 @@ Changes:
 
 - [legend] make legend items clickable, add `<LegendItem />` propTypes, add click test [#227](https://github.com/hshoff/vx/pull/227)
 
-#### :trophy: Contributers
+#### :trophy: Contributors
 
 - [hshoff](https://github.com/hshoff)
 
@@ -126,7 +218,7 @@ Changes:
 
 - [internal] add sideEffects: false to pkg for webpack 4 [#225](https://github.com/hshoff/vx/pull/225)
 
-#### :trophy: Contributers
+#### :trophy: Contributors
 
 - [hshoff](https://github.com/hshoff)
 
@@ -189,7 +281,7 @@ Changes:
 - [vx][test] fix `@vx/vx` text test. It was looking for `TextOutline` export which was removed with the [new `@vx/text`](https://github.com/hshoff/vx/pull/208) [#224](https://github.com/hshoff/vx/pull/224)
 - [axis] bump `prop-types` dep and use `^` [#224](https://github.com/hshoff/vx/pull/224)
 
-#### :trophy: Contributers
+#### :trophy: Contributors
 
 - [techniq](https://github.com/techniq)
 - [hshoff](https://github.com/hshoff)
